@@ -11,3 +11,11 @@
 .btn-info:hover{
     @apply bg-blue-600;
 }
+
+.card{
+    @apply bg-blue-100 rounded border-2 border-blue-800 p-4;
+}
+
+.card:hover{
+    @apply bg-red-100 transition duration-200;
+}
