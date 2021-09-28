@@ -5,12 +5,15 @@
   "main": "index.js",
   "scripts": {
     "build:css": "tailwindcss build -i src/style.css -o dist/style.css",
+    "watch:tailwind":"nodemon --watch src/style.css -x \"npm run build:css\"",
+    "serve":"npm run watch:tailwind",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Alfa",
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^10.3.5",
+    "nodemon": "^2.0.13",
     "postcss": "^8.3.7",
     "tailwindcss": "^2.2.15"
   }
